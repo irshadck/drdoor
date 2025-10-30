@@ -3538,4 +3538,117 @@ label {
   font-weight: 700;
 }
 
+/* Powered by section
+================================================== */
+.powered-by-section {
+  background: #1e2a33;
+  border-top: 1px solid #2a3740;
+  padding: 12px 0;
+}
+
+.powered-by-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.powered-by-text {
+  color: #8a9ba8;
+  font-size: 13px;
+  margin-right: 5px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.igentx-link {
+  color: #ffde04;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.igentx-link:hover {
+  color: #fff;
+  background: rgba(255, 222, 4, 0.1);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.igentx-text {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Tooltip styles */
+#igentx-tooltip {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  bottom: 100%;
+  margin-bottom: 8px;
+  width: 16rem; /* w-64 */
+  max-width: 80vw;
+  font-size: 14px;
+  color: #d1d5db; /* text-gray-200 */
+  background-color: #1f2937; /* bg-gray-800 */
+  border: 1px solid #374151; /* border-gray-700 */
+  border-radius: 6px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  transition: all 0.2s ease;
+  padding: 12px;
+  z-index: 50;
+}
+
+.group:hover #igentx-tooltip,
+.group:focus-within #igentx-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+#igentx-tooltip strong {
+  color: #ffffff; /* text-white */
+  font-weight: bold;
+}
+
+#igentx-tooltip .text-gray-300 {
+  color: #d1d5db;
+  margin-top: 4px;
+}
+
+#igentx-tooltip .text-primary {
+  color: #ffde04;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .powered-by-section {
+    padding: 8px 0;
+  }
+  
+  .powered-by-text,
+  .igentx-link {
+    font-size: 12px;
+  }
+  
+  #igentx-tooltip {
+    width: 12rem;
+    font-size: 12px;
+    padding: 8px;
+    left: 10px;
+    transform: translateY(4px);
+  }
+  
+  .group:hover #igentx-tooltip,
+  .group:focus-within #igentx-tooltip {
+    transform: translateY(0);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
